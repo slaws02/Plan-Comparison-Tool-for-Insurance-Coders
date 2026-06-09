@@ -252,3 +252,113 @@ Overall Risk: Critical
 3. Observe how structural differences impact outcomes
 4. Review severity scoring and risk flags
 ---
+## Visual Plan Comparison
+
+```mermaid
+flowchart TB
+
+A[Plan A] --> B[Comparison Engine]
+C[Plan B] --> B
+
+B --> D[Deductible<br/>$1500 vs $2000<br/> Leaner]
+B --> E[PCP<br/>$30 vs $30 After Ded<br/> Leaner]
+B --> F[Specialist<br/>$60 vs $60<br/> Equivalent]
+B --> G[Coinsurance<br/>20% vs 20%<br/> Equivalent]
+
+D --> H[Risk Engine]
+E --> H
+F --> H
+G --> H
+
+H --> I[CASE RISK: Critical]
+```
+##  UI Mockup (Concept)
+
+```
+--------------------------------------------------
+|  Plan Comparison AI                          |
+--------------------------------------------------
+
+INPUT
+----------------------------------------------
+Plan A Data          | Plan B Data
+--------------------|---------------------------
+Deductible: $1500   | Deductible: $2000
+PCP: $30            | PCP: $30 after deductible
+Specialist: $60     | Specialist: $60
+Coinsurance: 20%    | Coinsurance: 20%
+
+[ Run Comparison ]
+
+----------------------------------------------
+
+OUTPUT
+
+CASE RISK: Critical
+
+PLAN COMPARISON
+----------------------------------------------
+Deductible     → Leaner (Severity 3)
+PCP            → Leaner (Severity 3)
+Specialist     → Equivalent (Severity 1)
+Coinsurance    → Equivalent (Severity 1)
+
+KEY FINDINGS
+----------------------------------------------
+- Higher deductible increases cost
+- PCP requires deductible before access
+
+FPQ FLAGS
+----------------------------------------------
+- Potential benefit reduction detected
+- Access delay due to deductible structure
+
+CONFIDENCE: High
+----------------------------------------------
+```
+## Before vs After AI
+
+### Before (Manual Comparison)
+
+- Review multiple documents manually
+- Interpret inconsistent terminology
+- Compare benefits line-by-line
+- Risk missing structural differences
+- Inconsistent decision-making across users
+
+Example conclusion:
+"Plans look similar, proceed."
+
+---
+
+### After (AI-Assisted Comparison)
+
+✔ Structured normalization of all benefits  
+✔ Side-by-side comparison with classification  
+✔ Detection of hidden structural risks  
+✔ Severity-based risk scoring  
+✔ Standardized output and reasoning  
+
+Example conclusion:
+
+- Deductible increase identified → Leaner
+- PCP access delayed → Leaner (Critical)
+- Structural mismatch detected
+
+Final Output:
+Critical Risk – Recommend validation before proceeding
+
+---
+
+### Key Improvement
+
+| Capability | Before | After |
+|----------|--------|-------|
+| Consistency | Low | High |
+| Speed | Slow | Fast |
+| Risk Detection | Manual | Automated |
+| Decision Support | Limited | Structured |
+| Audit Readiness | Variable | Standardized |
+
+```
+``
