@@ -209,7 +209,7 @@ Plan A:
 Plan B:
 - Deductible: $2,000
 - PCP: $30 (after deductible)
-
+---
 ## Example Output
 PLAN COMPARISON
 
@@ -245,3 +245,10 @@ CASE RISK SUMMARY:
 Highest Severity: 3
 Overall Risk: Critical
 ``
+---
+## How to Use This Demo
+1. Review sample input plans
+2. Apply classification logic
+3. Observe how structural differences impact outcomes
+4. Review severity scoring and risk flags
+---
