@@ -162,3 +162,40 @@ This project is a conceptual demonstration only.
 It does not represent real systems, policies, or business rules.
 
 ---
+## System Flow Diagram
+
+```mermaid
+flowchart TD
+
+A[User Input<br/>SBC / Plan Data] --> B[Normalization Layer]
+B --> C[Structured Benefit Table]
+
+C --> D[Comparison Engine]
+D --> E[Classification Logic]
+
+E --> F{Evaluate Impact}
+
+F -->|Lower Cost / Better Access| G[Richer]
+F -->|Same| H[Equivalent]
+F -->|Higher Cost / Delayed Access| I[Leaner]
+
+E --> J[Structural Check]
+
+J -->|After Deductible| K[Leaner Flag]
+J -->|Embedded vs Aggregate| L[Moderate Flag]
+J -->|Visit Limits| M[Review Needed]
+
+G --> N[Severity Scoring]
+H --> N
+I --> N
+K --> N
+L --> N
+M --> N
+
+N --> O[Risk Analysis]
+
+O --> P[FPQ Flags]
+O --> Q[Case Risk Summary]
+
+Q --> R[Final Output]
+```
