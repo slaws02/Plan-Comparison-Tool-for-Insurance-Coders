@@ -1,3 +1,7 @@
+## 🚀 Demo Code
+
+View the logic in: `/PlanComparisonDemo.jsx`
+
 # Plan-Comparison-Tool-for-Insurance-Coders
 This tool allows insurance coders to compare existing benefits to company benefit offerings so that benefits can be properly mapped to comparable or richer benefits.
 # Plan Comparison AI (Mock Prototype)
