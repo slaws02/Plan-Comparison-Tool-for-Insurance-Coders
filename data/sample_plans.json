@@ -1,0 +1,20 @@
+{
+  "plan_a": {
+    "name": "Example PPO Plan A",
+    "deductible_individual": 1500,
+    "oop_max_individual": 5500,
+    "pcp_copay": 30,
+    "specialist_copay": 60,
+    "coinsurance": 20,
+    "notes": "PCP visits before deductible"
+  },
+  "plan_b": {
+    "name": "Example PPO Plan B",
+    "deductible_individual": 2000,
+    "oop_max_individual": 6000,
+    "pcp_copay": 30,
+    "specialist_copay": 60,
+    "coinsurance": 20,
+    "notes": "PCP visits after deductible"
+  }
+}
