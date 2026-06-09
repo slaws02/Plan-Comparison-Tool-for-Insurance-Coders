@@ -3,9 +3,9 @@
 Try the interactive Plan Comparison Demo:
 
 [Open Demo](https://codesandbox.io/p/devbox/yp8jv2)
-💻 Built using React
-✅ No proprietary data used  
-✅ Demonstrates decision logic & explainability
+- Built using React
+- No proprietary data used  
+- Demonstrates decision logic & explainability
 ``
 ---
 
