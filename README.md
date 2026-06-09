@@ -1,4 +1,43 @@
-## 🚀 Demo Code
+##  Live Demo
+
+Try the interactive Plan Comparison Demo:
+
+[Open Demo](https://codesandbox.io/p/devbox/yp8jv2)
+💻 Built using React
+✅ No proprietary data used  
+✅ Demonstrates decision logic & explainability
+``
+---
+
+### What this demo shows:
+- Scenario-based plan comparison
+- Equivalent, Richer, Leaner classification
+- Structural difference detection (e.g., before vs after deductible)
+- Severity-based risk scoring
+
+## Overview
+
+This is a non-proprietary sample demonstrating how structured plan data can be compared using rule-based logic.
+
+The goal is to simulate how an AI-powered system could:
+- Normalize plan benefit data
+- Identify cost differences
+- Detect hidden structural risks
+- Produce consistent, explainable outputs
+
+## How to Use
+
+1. Select a scenario from the dropdown
+2. Review the benefit comparisons
+3. Observe classification results:
+   - Richer
+   - Equivalent
+   - Leaner
+4. Review severity scoring and overall risk
+
+``
+
+## Demo Code
 
 View the logic in: `/PlanComparisonDemo.jsx`
 
