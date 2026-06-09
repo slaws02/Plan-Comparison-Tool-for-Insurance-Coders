@@ -2,7 +2,7 @@
 
 Try the interactive Plan Comparison Demo:
 
-[Open Demo](https://codesandbox.io/p/devbox/yp8jv2)
+[Open Demo](https://codesandbox.io/p/devbox/mrvr62)
 - Built using React
 - No proprietary data used  
 - Demonstrates decision logic & explainability
