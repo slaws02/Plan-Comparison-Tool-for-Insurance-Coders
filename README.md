@@ -199,3 +199,49 @@ O --> Q[Case Risk Summary]
 
 Q --> R[Final Output]
 ```
+## Example Input
+Compare Plan A vs Plan B
+
+Plan A:
+- Deductible: $1,500
+- PCP: $30 (before deductible)
+
+Plan B:
+- Deductible: $2,000
+- PCP: $30 (after deductible)
+
+## Example Output
+PLAN COMPARISON
+
+Deductible:
+Plan A: $1,500
+Plan B: $2,000
+Classification: Leaner
+Severity: 3 (Critical)
+Reason: Higher deductible increases member cost
+
+PCP Visits:
+Plan A: $30 before deductible
+Plan B: $30 after deductible
+Classification: Leaner
+Severity: 3 (Critical)
+Reason: Access delayed until deductible met
+
+---
+
+KEY FINDINGS:
+- Deductible increase creates higher upfront cost
+- Structural change delays access to care
+
+---
+
+FPQ FLAGS:
+- Potential benefit reduction identified—review before proceeding
+- Structural mismatch identified—copay applies after deductible
+
+---
+
+CASE RISK SUMMARY:
+Highest Severity: 3
+Overall Risk: Critical
+``
