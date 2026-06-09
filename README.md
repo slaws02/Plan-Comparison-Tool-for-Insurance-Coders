@@ -103,7 +103,7 @@ Each difference is assigned severity:
 
 ---
 
-##Example Output
+## Example Output
 
 
 Comparison Results:
